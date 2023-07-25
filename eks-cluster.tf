@@ -1,6 +1,6 @@
 # EKS Cluster
 resource "aws_eks_cluster" "this" {
-  name     = "${var.project}-cluster"
+  name     = "${var.project}"
   role_arn = aws_iam_role.cluster.arn
   version  = "1.24"
 
